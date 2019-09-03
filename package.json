@@ -1,0 +1,40 @@
+{
+  "name": "websitevsccurvedtext",
+  "version": "1.0.0",
+  "description": "curved text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "stylus assets/styles/site.styl -o dist/styles/site.css",
+    "pugtohtml": "pug --output-style compressed -o dist/ assets/pug/index.pug",
+    "build": "npm run build-css && npm run pugtohtml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steven-VI/WebsiteVSCCurvedTest.git"
+  },
+  "keywords": [
+    "curved",
+    "text"
+  ],
+  "author": "SVI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steven-VI/WebsiteVSCCurvedTest/issues"
+  },
+  "homepage": "https://github.com/Steven-VI/WebsiteVSCCurvedTest#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jade": "^1.11.0",
+    "stylus": "^0.54.7",
+    "pug": "^2.0.4",
+    "pug-cli":"^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "pug-cli":"^1.0.0-alpha6"
+  }
+}
